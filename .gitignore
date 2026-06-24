@@ -1,0 +1,10 @@
+# Internal Magia Moderna working docs — never publish to the site repo
+BUILD-BRIEF.md
+*.HTM
+*.htm
+Healing-Home-Brand-Board.html
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
