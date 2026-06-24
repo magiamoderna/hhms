@@ -11,7 +11,7 @@
 <meta property="og:title" content="Healing Home Make Services LLC | In-Home Senior Care in Miami">
 <meta property="og:description" content="Compassionate, dependable care in the comfort of home. Book a free in-home assessment today.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.HealingHomeMakeServices.com">
+<meta property="og:url" content="https://healinghomemakeservices.com">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,15 +96,22 @@
   .brand .logo{width:46px;height:46px;flex:none}
   .brand .bname{font-family:'Fraunces',serif;font-weight:600;font-size:19px;line-height:1.05;color:var(--pine)}
   .brand .bname span{display:block;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ocean)}
-  .nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+  .nav-links{display:flex;align-items:center;gap:2px;list-style:none}
   .nav-links a{
-    text-decoration:none;color:var(--ink);font-weight:700;font-size:16px;
-    padding:9px 12px;border-radius:8px;white-space:nowrap;
+    text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;
+    padding:8px 10px;border-radius:8px;white-space:nowrap;
   }
   .nav-links a:hover{background:var(--mist);color:var(--pine)}
   .nav-cta{display:flex;align-items:center;gap:10px}
   .nav-phone{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--pine);text-decoration:none;font-size:16px;white-space:nowrap}
   .nav-phone:hover{text-decoration:underline}
+  .lang-toggle{
+    display:inline-flex;align-items:center;gap:6px;background:var(--mist);color:var(--pine);
+    border:2px solid var(--line);border-radius:50px;padding:9px 14px;font-family:'Nunito Sans',sans-serif;
+    font-weight:800;font-size:14px;cursor:pointer;line-height:1;white-space:nowrap;
+  }
+  .lang-toggle:hover{background:#e3ede7;border-color:var(--sage)}
+  .lang-toggle svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
   .menu-toggle{display:none;background:none;border:2px solid var(--line);border-radius:10px;width:48px;height:48px;cursor:pointer;align-items:center;justify-content:center}
   .menu-toggle svg{width:24px;height:24px;stroke:var(--navy)}
 
@@ -159,9 +166,7 @@
     background:linear-gradient(160deg,#2C5F3A,#1F5AA8);box-shadow:var(--shadow);
     display:flex;align-items:flex-end;
   }
-  .why-visual .ph-note{margin:18px;background:rgba(255,255,255,.92);color:var(--muted);font-size:13px;font-weight:700;padding:8px 12px;border-radius:8px}
-  .why-visual .leaf-art{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.5}
-  .why-visual .leaf-art svg{width:200px;height:200px;stroke:rgba(255,255,255,.7);fill:none;stroke-width:1.2}
+  .why-visual img{width:100%;height:100%;object-fit:cover;display:block;min-height:380px}
 
   /* About */
   .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
@@ -169,11 +174,7 @@
     border-radius:22px;min-height:360px;background:linear-gradient(160deg,#EEF4F1,#cfe0d6);
     box-shadow:var(--shadow);display:flex;align-items:flex-end;justify-content:center;position:relative;overflow:hidden;
   }
-  .about-photo .mark{position:absolute;top:50%;left:50%;transform:translate(-50%,-55%);width:120px;height:120px;opacity:.8}
-  .about-photo .ph-note{margin:18px;background:rgba(255,255,255,.92);color:var(--muted);font-size:13px;font-weight:700;padding:8px 12px;border-radius:8px}
-  .about-photo img,.why-visual img{width:100%;height:100%;object-fit:cover;display:block}
-  .about-photo img{min-height:360px}
-  .why-visual img{min-height:380px}
+  .about-photo img{width:100%;height:100%;object-fit:cover;display:block;min-height:360px}
   .about-grid p{font-size:18.5px;margin-bottom:16px}
   .values{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
   .pill{background:#fff;border:1px solid var(--line);border-radius:50px;padding:8px 16px;font-weight:700;font-size:15px;color:var(--pine)}
@@ -192,13 +193,12 @@
   .assess .call-big{display:inline-flex;align-items:center;gap:10px;font-size:24px;font-weight:800;color:#fff;text-decoration:none}
   .assess .call-big svg{width:26px;height:26px;stroke:var(--sand)}
 
-  /* Form */
+  /* Reach-us card */
   .form-card{background:#fff;border-radius:var(--radius);padding:32px 30px;box-shadow:var(--shadow);color:var(--ink)}
   .form-card h3{font-size:23px;margin-bottom:4px}
   .form-card .fc-sub{color:var(--muted);font-size:16px;margin-bottom:20px}
   .form-card .btn{width:100%}
   .form-card .btn + .btn{margin-top:12px}
-  .form-card .or{text-align:center;color:var(--muted);font-weight:700;font-size:14px;margin:14px 0;letter-spacing:.04em}
 
   /* Contact */
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
@@ -209,8 +209,8 @@
   .contact-list .ci-label{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:800}
   .contact-list a,.contact-list .v{font-size:19px;font-weight:700;color:var(--navy);text-decoration:none}
   .contact-list a:hover{color:var(--ocean);text-decoration:underline}
-  .map-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);min-height:340px;background:var(--mist);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
-  .map-card .ph-note{color:var(--muted);font-weight:700;font-size:15px;max-width:32ch}
+  .map-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--line);min-height:340px;background:var(--mist)}
+  .map-card iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
 
   /* Footer */
   footer.site{background:var(--navy);color:#cdd9e6;padding:48px 0 28px}
@@ -231,8 +231,8 @@
     .why-grid,.about-grid,.assess-grid,.contact-grid{grid-template-columns:1fr;gap:34px}
     .about-grid .about-photo{order:-1;min-height:280px}
   }
-  @media (max-width:760px){
-    .nav-links,.nav-phone{display:none}
+  @media (max-width:1024px){
+    .nav-links{display:none}
     .menu-toggle{display:inline-flex}
     .nav-links.open{
       display:flex;flex-direction:column;align-items:stretch;gap:4px;
@@ -240,6 +240,8 @@
       border-bottom:1px solid var(--line);padding:14px 22px;box-shadow:var(--shadow-sm);
     }
     .nav-links.open a{padding:13px 12px;font-size:18px}
+  }
+  @media (max-width:760px){
     header.site{position:sticky}
     section.block{padding:56px 0}
     .hero .container{padding-top:54px;padding-bottom:58px}
@@ -251,11 +253,12 @@
     .hero p.lead{font-size:18px}
     .btn{width:100%}
     .hero-cta{flex-direction:column}
+    .nav-phone-num{display:none}
   }
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip-link" href="#main" data-i18n="skip">Skip to main content</a>
 
 <!-- ============ HEADER ============ -->
 <header class="site">
@@ -272,20 +275,23 @@
     </a>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#why">Why Home Care</a></li>
-      <li><a href="#assessment">Free Assessment</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="#why" data-i18n="nav.why">Why Home Care</a></li>
+      <li><a href="#assessment" data-i18n="nav.assessment">Free Assessment</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
 
     <div class="nav-cta">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Ver esta página en español">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="langLabel">ES</span>
+      </button>
       <a class="nav-phone" href="tel:+13057800419" aria-label="Call us at 305 780 0419">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        305-780-0419
+        <span class="nav-phone-num">305-780-0419</span>
       </a>
-      <a class="btn btn-solid" href="#assessment" style="padding:11px 18px;min-height:44px;font-size:16px">Free Assessment</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -298,18 +304,18 @@
 <!-- ============ HERO / HOME ============ -->
 <section class="hero" id="home">
   <div class="container">
-    <p class="eyebrow">In-home senior care in Miami</p>
-    <h1>Your loved one stays home, safe and well cared for.</h1>
-    <span class="script">in the comfort of home</span>
-    <p class="lead">Healing Home Make Services brings warm, dependable care into the place your family knows best. We help seniors keep their comfort, dignity, and daily routines at home, and we give you the peace of mind that someone caring is always close by.</p>
+    <p class="eyebrow" data-i18n="hero.eyebrow">In-home senior care in Miami</p>
+    <h1 data-i18n="hero.h1">Your loved one stays home, safe and well cared for.</h1>
+    <span class="script" data-i18n="hero.script">in the comfort of home</span>
+    <p class="lead" data-i18n="hero.lead">Healing Home Make Services brings warm, dependable care into the place your family knows best. We help seniors keep their comfort, dignity, and daily routines at home, and we give you the peace of mind that someone caring is always close by.</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="#assessment">Book a Free In-Home Assessment</a>
-      <a class="btn btn-ghost" href="tel:+13057800419">Call 305-780-0419</a>
+      <a class="btn btn-primary" href="#assessment" data-i18n="hero.cta1">Book a Free In-Home Assessment</a>
+      <a class="btn btn-ghost" href="tel:+13057800419" data-i18n="hero.cta2">Call 305-780-0419</a>
     </div>
     <div class="hero-trust">
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>Locally owned in Miami</span>
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Compassionate, screened caregivers</span>
-      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 8v4l3 2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>Care that fits your schedule</span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="hero.trust1">Locally owned in Miami</span></span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="hero.trust2">Compassionate, screened caregivers</span></span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 8v4l3 2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg><span data-i18n="hero.trust3">Care that fits your schedule</span></span>
     </div>
   </div>
 </section>
@@ -321,16 +327,16 @@
       <img src="assets/img/caregiver-holding-hands.jpg" alt="A caregiver gently holding the hands of an older adult at home in Miami" loading="lazy" width="700" height="467">
     </div>
     <div>
-      <p class="eyebrow">About us</p>
-      <h2>Care that feels like family, with the steady hand of a professional.</h2>
-      <p>We started Healing Home Make Services because every family deserves a caregiver they can truly trust. We know how much it means to keep your mom, dad, or loved one at home, surrounded by familiar comforts and the people they love.</p>
-      <p>Our caregivers are warm, patient, and carefully chosen. They show up on time, listen closely, and treat your loved one with the respect and dignity they have earned. You get reliable support, and your family gets to breathe a little easier.</p>
+      <p class="eyebrow" data-i18n="about.eyebrow">About us</p>
+      <h2 data-i18n="about.h2">Care that feels like family, with the steady hand of a professional.</h2>
+      <p data-i18n="about.p1">We started Healing Home Make Services because every family deserves a caregiver they can truly trust. We know how much it means to keep your mom, dad, or loved one at home, surrounded by familiar comforts and the people they love.</p>
+      <p data-i18n="about.p2">Our caregivers are warm, patient, and carefully chosen. They show up on time, listen closely, and treat your loved one with the respect and dignity they have earned. You get reliable support, and your family gets to breathe a little easier.</p>
       <div class="values">
-        <span class="pill">Trusted</span>
-        <span class="pill">Compassionate</span>
-        <span class="pill">Family-centered</span>
-        <span class="pill">Dependable</span>
-        <span class="pill">Respectful</span>
+        <span class="pill" data-i18n="about.pill1">Trusted</span>
+        <span class="pill" data-i18n="about.pill2">Compassionate</span>
+        <span class="pill" data-i18n="about.pill3">Family-centered</span>
+        <span class="pill" data-i18n="about.pill4">Dependable</span>
+        <span class="pill" data-i18n="about.pill5">Respectful</span>
       </div>
     </div>
   </div>
@@ -340,40 +346,40 @@
 <section class="block alt" id="services">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Our services</p>
-      <h2>Thoughtful support for everyday life at home</h2>
-      <p>Every family is different, so we build care around your loved one's needs and routines. Here are the ways we help most.</p>
+      <p class="eyebrow" data-i18n="services.eyebrow">Our services</p>
+      <h2 data-i18n="services.h2">Thoughtful support for everyday life at home</h2>
+      <p data-i18n="services.lead">Every family is different, so we build care around your loved one's needs and routines. Here are the ways we help most.</p>
     </div>
     <div class="cards">
       <article class="card">
         <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 1 3 3v1a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 22v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Personal care &amp; hygiene</h3>
-        <p>Gentle, respectful help with bathing, grooming, dressing, and mobility, always at your loved one's pace.</p>
+        <h3 data-i18n="svc1.title">Personal care &amp; hygiene</h3>
+        <p data-i18n="svc1.desc">Gentle, respectful help with bathing, grooming, dressing, and mobility, always at your loved one's pace.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Companionship &amp; emotional support</h3>
-        <p>Friendly conversation, shared activities, and a caring presence so no one feels alone in their day.</p>
+        <h3 data-i18n="svc2.title">Companionship &amp; emotional support</h3>
+        <p data-i18n="svc2.desc">Friendly conversation, shared activities, and a caring presence so no one feels alone in their day.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11h18M5 11V7a2 2 0 0 1 2-2h2M12 5V3M16 5h1a2 2 0 0 1 2 2v4M5 11v4a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Meal preparation</h3>
-        <p>Nourishing, home-cooked meals made to personal tastes and dietary needs, shared at the kitchen table.</p>
+        <h3 data-i18n="svc3.title">Meal preparation</h3>
+        <p data-i18n="svc3.desc">Nourishing, home-cooked meals made to personal tastes and dietary needs, shared at the kitchen table.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="18" rx="2"/><path d="M9 2v4M15 2v4M9 13h6M12 10v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Medication reminders</h3>
-        <p>Timely, friendly reminders that help your loved one take the right medicine at the right time.</p>
+        <h3 data-i18n="svc4.title">Medication reminders</h3>
+        <p data-i18n="svc4.desc">Timely, friendly reminders that help your loved one take the right medicine at the right time.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V10l9-7 9 7v11" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Light housekeeping</h3>
-        <p>Tidy rooms, fresh laundry, and a clean, safe space, so home stays comfortable and easy to enjoy.</p>
+        <h3 data-i18n="svc5.title">Light housekeeping</h3>
+        <p data-i18n="svc5.desc">Tidy rooms, fresh laundry, and a clean, safe space, so home stays comfortable and easy to enjoy.</p>
       </article>
       <article class="card">
         <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Daily living assistance</h3>
-        <p>A helping hand with errands, appointments, and everyday tasks that keep life running smoothly.</p>
+        <h3 data-i18n="svc6.title">Daily living assistance</h3>
+        <p data-i18n="svc6.desc">A helping hand with errands, appointments, and everyday tasks that keep life running smoothly.</p>
       </article>
     </div>
   </div>
@@ -383,25 +389,25 @@
 <section class="block" id="why">
   <div class="container why-grid">
     <div>
-      <p class="eyebrow">Why home care</p>
-      <h2>Home is where people heal best</h2>
-      <p style="color:var(--muted);font-size:19px;margin-top:8px">Staying home keeps your loved one close to the routines, memories, and comforts that make life feel like their own. With the right support, home is the safest and happiest place to be.</p>
+      <p class="eyebrow" data-i18n="why.eyebrow">Why home care</p>
+      <h2 data-i18n="why.h2">Home is where people heal best</h2>
+      <p style="color:var(--muted);font-size:19px;margin-top:8px" data-i18n="why.lead">Staying home keeps your loved one close to the routines, memories, and comforts that make life feel like their own. With the right support, home is the safest and happiest place to be.</p>
       <ul class="why-list">
         <li>
           <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><h3>Comfort and familiarity</h3><p>Their own bed, their own kitchen, their own garden. Familiar surroundings ease stress and lift spirits.</p></div>
+          <div><h3 data-i18n="why1.title">Comfort and familiarity</h3><p data-i18n="why1.desc">Their own bed, their own kitchen, their own garden. Familiar surroundings ease stress and lift spirits.</p></div>
         </li>
         <li>
           <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><h3>One-on-one attention</h3><p>Care focused entirely on your loved one, not split across a busy facility floor.</p></div>
+          <div><h3 data-i18n="why2.title">One-on-one attention</h3><p data-i18n="why2.desc">Care focused entirely on your loved one, not split across a busy facility floor.</p></div>
         </li>
         <li>
           <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><h3>Independence and dignity</h3><p>We support daily routines so your loved one keeps doing what they can, their way.</p></div>
+          <div><h3 data-i18n="why3.title">Independence and dignity</h3><p data-i18n="why3.desc">We support daily routines so your loved one keeps doing what they can, their way.</p></div>
         </li>
         <li>
           <span class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><h3>Peace of mind for family</h3><p>Clear communication and dependable caregivers mean you always know your loved one is in good hands.</p></div>
+          <div><h3 data-i18n="why4.title">Peace of mind for family</h3><p data-i18n="why4.desc">Clear communication and dependable caregivers mean you always know your loved one is in good hands.</p></div>
         </li>
       </ul>
     </div>
@@ -415,13 +421,13 @@
 <section class="assess" id="assessment">
   <div class="container assess-grid">
     <div>
-      <p class="eyebrow">Free in-home assessment</p>
-      <h2>Let's start with a simple conversation</h2>
-      <p>There is no pressure and no cost. We visit your loved one at home, listen to your family's needs, and put together a care plan that fits. It is the easiest first step toward peace of mind.</p>
+      <p class="eyebrow" data-i18n="assess.eyebrow">Free in-home assessment</p>
+      <h2 data-i18n="assess.h2">Let's start with a simple conversation</h2>
+      <p data-i18n="assess.p">There is no pressure and no cost. We visit your loved one at home, listen to your family's needs, and put together a care plan that fits. It is the easiest first step toward peace of mind.</p>
       <ol class="steps">
-        <li><span class="num">1</span><div>Call, message, or email us, and we will reach out within one business day.</div></li>
-        <li><span class="num">2</span><div>We visit at a time that works for you and get to know your loved one.</div></li>
-        <li><span class="num">3</span><div>You receive a simple, no-obligation care plan built around their needs.</div></li>
+        <li><span class="num">1</span><div data-i18n="assess.step1">Call, message, or email us, and we will reach out within one business day.</div></li>
+        <li><span class="num">2</span><div data-i18n="assess.step2">We visit at a time that works for you and get to know your loved one.</div></li>
+        <li><span class="num">3</span><div data-i18n="assess.step3">You receive a simple, no-obligation care plan built around their needs.</div></li>
       </ol>
       <div class="call-row">
         <a class="call-big" href="tel:+13057800419">
@@ -432,11 +438,11 @@
     </div>
 
     <div class="form-card">
-      <h3>Reach us directly</h3>
-      <p class="fc-sub">No forms, no waiting. Call, message us on WhatsApp, or send an email, and we will set up your free visit. A real, caring person answers.</p>
-      <a class="btn btn-primary" href="tel:+13057800419">Call 305-780-0419</a>
-      <a class="btn btn-solid" href="https://wa.me/13057800419" target="_blank" rel="noopener">Message on WhatsApp</a>
-      <a class="btn btn-outline" href="mailto:Healing.Home.Make.llc@gmail.com">Email Us</a>
+      <h3 data-i18n="assess.cardTitle">Reach us directly</h3>
+      <p class="fc-sub" data-i18n="assess.cardSub">No forms, no waiting. Call, message us on WhatsApp, or send an email, and we will set up your free visit. A real, caring person answers.</p>
+      <a class="btn btn-primary" href="tel:+13057800419" data-i18n="assess.btnCall">Call 305-780-0419</a>
+      <a class="btn btn-solid" href="https://wa.me/13057800419" target="_blank" rel="noopener" data-i18n="assess.btnWhats">Message on WhatsApp</a>
+      <a class="btn btn-outline" href="mailto:Healing.Home.Make.llc@gmail.com" data-i18n="assess.btnEmail">Email Us</a>
     </div>
   </div>
 </section>
@@ -445,34 +451,34 @@
 <section class="block alt" id="contact">
   <div class="container contact-grid">
     <div>
-      <p class="eyebrow">Contact</p>
-      <h2>We are here when you are ready</h2>
-      <p style="color:var(--muted);font-size:19px;margin-top:8px">Reach out any way that feels easiest. A real, caring person will help you take the next step.</p>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+      <h2 data-i18n="contact.h2">We are here when you are ready</h2>
+      <p style="color:var(--muted);font-size:19px;margin-top:8px" data-i18n="contact.p">Reach out any way that feels easiest. A real, caring person will help you take the next step.</p>
       <ul class="contact-list">
         <li>
           <span class="ci-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><div class="ci-label">Phone</div><a href="tel:+13057800419">305-780-0419</a></div>
+          <div><div class="ci-label" data-i18n="contact.lblPhone">Phone</div><a href="tel:+13057800419">305-780-0419</a></div>
         </li>
         <li>
           <span class="ci-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 20l1.4-4.2A8.5 8.5 0 1 1 21 11.5z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><div class="ci-label">WhatsApp</div><a href="https://wa.me/13057800419" target="_blank" rel="noopener">Message 305-780-0419</a></div>
+          <div><div class="ci-label" data-i18n="contact.lblWhats">WhatsApp</div><a href="https://wa.me/13057800419" target="_blank" rel="noopener" data-i18n="contact.valWhats">Message 305-780-0419</a></div>
         </li>
         <li>
           <span class="ci-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><div class="ci-label">Email</div><a href="mailto:Healing.Home.Make.llc@gmail.com">Healing.Home.Make.llc@gmail.com</a></div>
+          <div><div class="ci-label" data-i18n="contact.lblEmail">Email</div><a href="mailto:Healing.Home.Make.llc@gmail.com">Healing.Home.Make.llc@gmail.com</a></div>
         </li>
         <li>
           <span class="ci-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <div><div class="ci-label">Web</div><a href="https://www.HealingHomeMakeServices.com">www.HealingHomeMakeServices.com</a></div>
+          <div><div class="ci-label" data-i18n="contact.lblWeb">Web</div><a href="https://healinghomemakeservices.com">healinghomemakeservices.com</a></div>
         </li>
         <li>
           <span class="ci-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <div><div class="ci-label">Serving</div><span class="v">Miami, FL &amp; surrounding areas</span></div>
+          <div><div class="ci-label" data-i18n="contact.lblServing">Serving</div><span class="v" data-i18n="contact.valServing">Miami, FL &amp; surrounding areas</span></div>
         </li>
       </ul>
     </div>
     <div class="map-card">
-      <span class="ph-note">Map slot: Google Maps embed of the Miami service area goes here on the live build.</span>
+      <iframe title="Map of the Miami, Florida service area" src="https://www.google.com/maps?q=Miami,FL&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -493,32 +499,32 @@
           </svg>
           <span class="bname">Healing Home<span>Make Services LLC</span></span>
         </a>
-        <p>Compassionate, dependable in-home senior care in Miami, delivered in the comfort of home.</p>
+        <p data-i18n="footer.tagline">Compassionate, dependable in-home senior care in Miami, delivered in the comfort of home.</p>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h4 data-i18n="footer.explore">Explore</h4>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#why">Why Home Care</a></li>
-          <li><a href="#assessment">Free Assessment</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#why" data-i18n="nav.why">Why Home Care</a></li>
+          <li><a href="#assessment" data-i18n="nav.assessment">Free Assessment</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Get in touch</h4>
+        <h4 data-i18n="footer.getintouch">Get in touch</h4>
         <ul>
           <li><a href="tel:+13057800419">305-780-0419</a></li>
           <li><a href="https://wa.me/13057800419" target="_blank" rel="noopener">WhatsApp: 305-780-0419</a></li>
           <li><a href="mailto:Healing.Home.Make.llc@gmail.com">Healing.Home.Make.llc@gmail.com</a></li>
-          <li><a href="https://www.HealingHomeMakeServices.com">HealingHomeMakeServices.com</a></li>
-          <li>Miami, FL &amp; surrounding areas</li>
+          <li><a href="https://healinghomemakeservices.com">healinghomemakeservices.com</a></li>
+          <li data-i18n="footer.serving">Miami, FL &amp; surrounding areas</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> Healing Home Make Services LLC. All rights reserved.</span>
-      <span>Site by <a href="https://magiamoderna.co">Magia Moderna</a> &nbsp;·&nbsp; <a href="#">Privacy Policy</a></span>
+      <span>&copy; <span id="year"></span> Healing Home Make Services LLC. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <span><span data-i18n="footer.siteby">Site by</span> <a href="https://magiamoderna.co">Magia Moderna</a> &nbsp;·&nbsp; <a href="#" data-i18n="footer.privacy">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
@@ -543,6 +549,114 @@
 
   // Current year
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Language toggle (English / Spanish)
+  (function(){
+    var I18N = { es: {
+      "skip":"Saltar al contenido principal",
+      "nav.home":"Inicio",
+      "nav.about":"Nosotros",
+      "nav.services":"Servicios",
+      "nav.why":"Por qué en casa",
+      "nav.assessment":"Evaluación gratis",
+      "nav.contact":"Contacto",
+      "nav.cta":"Evaluación gratis",
+      "hero.eyebrow":"Cuidado de personas mayores en casa, en Miami",
+      "hero.h1":"Su ser querido se queda en casa, seguro y bien cuidado.",
+      "hero.script":"en la comodidad del hogar",
+      "hero.lead":"Healing Home Make Services lleva un cuidado cálido y confiable al lugar que su familia conoce mejor. Ayudamos a los adultos mayores a conservar su comodidad, su dignidad y sus rutinas diarias en casa, y le damos la tranquilidad de saber que siempre hay alguien que cuida cerca.",
+      "hero.cta1":"Reserve una evaluación gratis en casa",
+      "hero.cta2":"Llame al 305-780-0419",
+      "hero.trust1":"Empresa local en Miami",
+      "hero.trust2":"Cuidadores compasivos y verificados",
+      "hero.trust3":"Cuidado que se adapta a su horario",
+      "about.eyebrow":"Quiénes somos",
+      "about.h2":"Un cuidado que se siente como familia, con la mano firme de un profesional.",
+      "about.p1":"Creamos Healing Home Make Services porque toda familia merece un cuidador en quien pueda confiar de verdad. Sabemos lo mucho que significa que su mamá, su papá o su ser querido se quede en casa, rodeado de las comodidades familiares y de las personas que ama.",
+      "about.p2":"Nuestros cuidadores son cálidos, pacientes y elegidos con cuidado. Llegan a tiempo, escuchan con atención y tratan a su ser querido con el respeto y la dignidad que merece. Usted recibe un apoyo confiable, y su familia puede respirar un poco más tranquila.",
+      "about.pill1":"De confianza",
+      "about.pill2":"Compasivos",
+      "about.pill3":"Centrados en la familia",
+      "about.pill4":"Confiables",
+      "about.pill5":"Respetuosos",
+      "services.eyebrow":"Nuestros servicios",
+      "services.h2":"Apoyo atento para la vida diaria en casa",
+      "services.lead":"Cada familia es diferente, por eso adaptamos el cuidado a las necesidades y rutinas de su ser querido. Estas son las formas en que más ayudamos.",
+      "svc1.title":"Cuidado personal e higiene",
+      "svc1.desc":"Ayuda amable y respetuosa con el baño, el arreglo personal, el vestido y la movilidad, siempre al ritmo de su ser querido.",
+      "svc2.title":"Compañía y apoyo emocional",
+      "svc2.desc":"Conversación amena, actividades compartidas y una presencia cariñosa para que nadie se sienta solo en su día.",
+      "svc3.title":"Preparación de comidas",
+      "svc3.desc":"Comidas caseras y nutritivas, hechas según los gustos y las necesidades de cada persona, compartidas en la mesa de la cocina.",
+      "svc4.title":"Recordatorios de medicamentos",
+      "svc4.desc":"Recordatorios puntuales y amables que ayudan a su ser querido a tomar el medicamento correcto a la hora correcta.",
+      "svc5.title":"Tareas ligeras del hogar",
+      "svc5.desc":"Habitaciones ordenadas, ropa limpia y un espacio limpio y seguro, para que el hogar siga siendo cómodo y fácil de disfrutar.",
+      "svc6.title":"Asistencia en la vida diaria",
+      "svc6.desc":"Una mano amiga con los mandados, las citas y las tareas de cada día que mantienen la vida en marcha.",
+      "why.eyebrow":"Por qué el cuidado en casa",
+      "why.h2":"En casa es donde mejor se sana",
+      "why.lead":"Quedarse en casa mantiene a su ser querido cerca de las rutinas, los recuerdos y las comodidades que hacen que la vida se sienta suya. Con el apoyo adecuado, el hogar es el lugar más seguro y feliz para estar.",
+      "why1.title":"Comodidad y familiaridad",
+      "why1.desc":"Su propia cama, su propia cocina, su propio jardín. Los lugares conocidos alivian el estrés y levantan el ánimo.",
+      "why2.title":"Atención personalizada",
+      "why2.desc":"Un cuidado enfocado por completo en su ser querido, no repartido por el piso de un centro lleno de gente.",
+      "why3.title":"Independencia y dignidad",
+      "why3.desc":"Apoyamos las rutinas diarias para que su ser querido siga haciendo lo que puede, a su manera.",
+      "why4.title":"Tranquilidad para la familia",
+      "why4.desc":"Una comunicación clara y cuidadores confiables hacen que usted siempre sepa que su ser querido está en buenas manos.",
+      "assess.eyebrow":"Evaluación gratis en casa",
+      "assess.h2":"Empecemos con una conversación sencilla",
+      "assess.p":"No hay presión ni costo. Visitamos a su ser querido en casa, escuchamos las necesidades de su familia y armamos un plan de cuidado que se ajuste. Es el primer paso más fácil hacia la tranquilidad.",
+      "assess.step1":"Llámenos, escríbanos o envíenos un correo, y le responderemos en un día hábil.",
+      "assess.step2":"Visitamos a la hora que mejor le convenga y conocemos a su ser querido.",
+      "assess.step3":"Usted recibe un plan de cuidado sencillo y sin compromiso, hecho a la medida de sus necesidades.",
+      "assess.cardTitle":"Comuníquese directamente",
+      "assess.cardSub":"Sin formularios ni esperas. Llame, escríbanos por WhatsApp o envíe un correo, y coordinamos su visita gratis. Le responde una persona real y atenta.",
+      "assess.btnCall":"Llame al 305-780-0419",
+      "assess.btnWhats":"Escríbanos por WhatsApp",
+      "assess.btnEmail":"Envíe un correo",
+      "contact.eyebrow":"Contacto",
+      "contact.h2":"Estamos aquí cuando usted esté listo",
+      "contact.p":"Comuníquese de la forma que le resulte más fácil. Una persona real y atenta le ayudará a dar el siguiente paso.",
+      "contact.lblPhone":"Teléfono",
+      "contact.lblWhats":"WhatsApp",
+      "contact.valWhats":"Escríbanos al 305-780-0419",
+      "contact.lblEmail":"Correo",
+      "contact.lblWeb":"Sitio web",
+      "contact.lblServing":"Cobertura",
+      "contact.valServing":"Miami, FL y alrededores",
+      "footer.tagline":"Cuidado de personas mayores en casa, compasivo y confiable en Miami, brindado en la comodidad del hogar.",
+      "footer.explore":"Explorar",
+      "footer.getintouch":"Comuníquese",
+      "footer.serving":"Miami, FL y alrededores",
+      "footer.rights":"Todos los derechos reservados.",
+      "footer.siteby":"Sitio por",
+      "footer.privacy":"Política de privacidad"
+    }};
+    var store = {};
+    var btn = document.getElementById('langToggle');
+    var label = document.getElementById('langLabel');
+    function apply(lang){
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(function(el){
+        var k = el.getAttribute('data-i18n');
+        if(!(k in store)) store[k] = el.textContent;
+        var es = I18N.es[k];
+        el.textContent = (lang === 'es' && es != null) ? es : store[k];
+      });
+      if(label) label.textContent = (lang === 'es') ? 'EN' : 'ES';
+      if(btn) btn.setAttribute('aria-label', (lang === 'es') ? 'View this page in English' : 'Ver esta página en español');
+      try{ localStorage.setItem('hhms_lang', lang); }catch(e){}
+    }
+    var saved = null;
+    try{ saved = localStorage.getItem('hhms_lang'); }catch(e){}
+    var initial = saved || (((navigator.language || '').toLowerCase().indexOf('es') === 0) ? 'es' : 'en');
+    apply(initial);
+    if(btn) btn.addEventListener('click', function(){
+      apply(document.documentElement.lang === 'es' ? 'en' : 'es');
+    });
+  })();
 </script>
 </body>
 </html>

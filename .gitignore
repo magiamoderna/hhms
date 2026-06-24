@@ -4,6 +4,9 @@ BUILD-BRIEF.md
 *.htm
 Healing-Home-Brand-Board.html
 
+# Local tooling
+.claude/
+
 # OS / editor noise
 .DS_Store
 Thumbs.db
